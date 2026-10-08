@@ -47,6 +47,8 @@ def download_and_save_parquet(url: str, local_path: str, retries: int = 3) -> No
     Download the dataset with a retry loop and chunked writing to prevent corruption.
     """
     print(f"[1/3] Downloading FHVHV dataset from:\n      {url}")
+
+    os.makedirs(os.path.dirname(local_path), exist_ok=True)
     
     for attempt in range(retries):
         try:
