@@ -2,7 +2,7 @@
 
 End-to-end big data pipeline built on NYC TLC High Volume For-Hire Vehicle (FHVHV) trip records.  
 The project ingests raw Parquet data, processes it through a Spark medallion architecture, stores  
-every layer in a MinIO S3-compatible data lake, and surfaces analytical results through a FastAPI REST API.
+every layer in a MinIO S3-compatible data lake, and surfaces analytical results through a FastAPI REST API. Project made with @ValtteriToivanen2003 and @reinoanipuro
 
 ---
 
